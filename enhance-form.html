@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced-Form HTML5 </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #bbb;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            border-top: 2px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced Form</h1>
+    <p>Lists, tables, media, and advanced HTML5 form features demo.</p>
+</header>
+
+<main>
+
+    
+    <section>
+        <h2> Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Analysis</li>
+            <li>Environmental Consultancy</li>
+        </ul>
+        <h3>Steps to Enroll</h3>
+        <ol>
+            <li>Choose a course</li>
+            <li>Fill out the registration form</li>
+            <li>Submit payment</li>
+        </ol>
+    </section>
+
+    
+    <section>
+        <h2>Course Schedule</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>Monday</td>
+                <td>10:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td>Wednesday</td>
+                <td>2:00 PM - 4:00 PM</td>
+            </tr>
+            <tr>
+                <td>Environmental Studies</td>
+                <td>Friday</td>
+                <td>9:00 AM - 11:00 AM</td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <section>
+        <h2>Media Showcase</h2>
+       
+        
+        <video controls width="100%">
+            <source src="c:\Users\User\Downloads\3186590-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?\d{10,15}$" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Details</legend>
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select--</option>
+                    <option value="webdev">Web Development</option>
+                    <option value="datasci">Data Science</option>
+                    <option value="env">Environmental Studies</option>
+                </select>
+
+                <label for="refcode">Reference Code:</label>
+                <input type="text" id="refcode" value="COURSE-2025" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Your message here..."></textarea>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2025 HTML5 Enhanced Assignment. All rights reserved.
+</footer>
+
+</body>
+</html>
